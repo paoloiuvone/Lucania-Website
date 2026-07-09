@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Lucania Contractors LLC</title>
+  <meta name="description" content="Contact Lucania Contractors LLC. Call 956-890-6069, email admin@lucaniacontractors.com, or send us a message. P.O. 2806, Mission, TX 78572.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav__logo" href="index.html" aria-label="Lucania Contractors LLC home">
+        <img src="assets/logo.png" alt="Lucania Contractors LLC">
+      </a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown">
+            <li><a href="bridges-structures.html">Bridges &amp; Structures</a></li>
+            <li><a href="underground-utilities.html">Underground Utilities</a></li>
+          </ul>
+        </li>
+        <li><a href="employment.html">Employment</a></li>
+        <li><a href="contact.html" class="is-active">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero hero--sub" style="background-image: url('assets/hero-2.jpg');">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear about your project. Reach out and we'll get back to you.</p>
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT ============================ -->
+  <section class="section">
+    <div class="container contact-wrap">
+
+      <!-- Contact info -->
+      <div>
+        <h2 class="section-title">Get in Touch</h2>
+        <ul class="info-list">
+          <li><span class="label">Phone</span><a href="tel:+19568906069">956-890-6069</a></li>
+          <li><span class="label">Email</span><a href="mailto:admin@lucaniacontractors.com">admin@lucaniacontractors.com</a></li>
+          <li><span class="label">Mail</span><span>P.O. 2806, Mission, TX 78572</span></li>
+        </ul>
+      </div>
+
+      <!-- Contact form -->
+      <div>
+        <h2 class="section-title">Send a Message</h2>
+        <!--
+          This form uses FormSubmit (https://formsubmit.co) — free, no account required.
+          IMPORTANT: The FIRST time this form is submitted, FormSubmit sends a one-time
+          confirmation email to admin@lucaniacontractors.com. Click the link in that email
+          once to activate the form; after that, all submissions arrive in the inbox.
+        -->
+        <form action="https://formsubmit.co/admin@lucaniacontractors.com" method="POST">
+          <!-- FormSubmit options -->
+          <input type="hidden" name="_subject" value="New message from lucaniacontractors.com">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <!-- Honeypot: bots fill this, humans don't -->
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fname">First name <span class="req">*</span></label>
+              <input type="text" id="fname" name="First Name" required>
+            </div>
+            <div class="form-field">
+              <label for="lname">Last name <span class="req">*</span></label>
+              <input type="text" id="lname" name="Last Name" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="Phone">
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="Message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/logo-white.png" alt="Lucania Contractors LLC">
+          <p>Heavy civil construction serving TxDOT and municipalities across South Texas.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bridges-structures.html">Bridges &amp; Structures</a></li>
+            <li><a href="underground-utilities.html">Underground Utilities</a></li>
+            <li><a href="employment.html">Employment</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+19568906069">956-890-6069</a></li>
+            <li><a href="mailto:admin@lucaniacontractors.com">admin@lucaniacontractors.com</a></li>
+            <li>P.O. 2806, Mission, TX 78572</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="year">2026</span> Lucania Contractors LLC. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
